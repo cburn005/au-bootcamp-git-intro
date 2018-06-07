@@ -96,5 +96,6 @@ echo "$@"
 
 for file in "$@";
 do
-  cat $file | grep ">" | wc -l
+  basename example-seqs1.fasta .fasta
+   cat $file | grep ">" | wc -l
 done
