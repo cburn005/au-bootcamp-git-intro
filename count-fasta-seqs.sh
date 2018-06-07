@@ -94,3 +94,7 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
+for file in "$@";
+do
+  cat $file | grep ">" | wc -l
+done
